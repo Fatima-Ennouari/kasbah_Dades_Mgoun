@@ -10,7 +10,7 @@ use App\Models\Reservation;
 
 class AdminController extends Controller
 {
-    // simple auth check - redirect to login if not logged in
+## simple auth check - redirect to login if not logged in
     private function requireAuth()
     {
         if (!session('admin_logged_in')) {
@@ -19,8 +19,7 @@ class AdminController extends Controller
         return null;
     }
 
-    // ── AUTH ─────────────────────────────────
-
+##AUTHENTICATION
     public function loginForm()
     {
         if (session('admin_logged_in')) {
@@ -51,7 +50,7 @@ class AdminController extends Controller
         return redirect()->route('admin.login');
     }
 
-    // ── DASHBOARD ────────────────────────────
+    ## DASHBOARD ##
 
     public function dashboard()
     {
@@ -74,7 +73,7 @@ class AdminController extends Controller
         return view('admin.dashboard', compact('stats', 'recent'));
     }
 
-    // ── ROOMS CRUD ───────────────────────────
+    ## ROOMS CRUD ##
 
     public function rooms()
     {
@@ -176,8 +175,7 @@ class AdminController extends Controller
                          ->with('success', 'Chambre supprimée.');
     }
 
-    // ── RESERVATIONS ─────────────────────────
-
+## RESERVATIONS CRUD ###
     public function reservations()
     {
         if ($r = $this->requireAuth()) return $r;
@@ -215,7 +213,7 @@ class AdminController extends Controller
                          ->with('success', 'Réservation supprimée.');
     }
 
-    // ── CLIENTS ──────────────────────────────
+    ## CLIENTS ##
 
     public function clients()
     {

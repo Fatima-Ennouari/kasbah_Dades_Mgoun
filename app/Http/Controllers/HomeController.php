@@ -7,10 +7,9 @@ use App\Models\Room;
 
 class HomeController extends Controller
 {
-    // main home page
     public function index()
     {
-        // show 3 featured rooms on the homepage
+        ## show 3 featured rooms on the homepage
         $featured = Room::where('available', true)
                         ->orderBy('price', 'desc')
                         ->take(3)
@@ -24,10 +23,10 @@ class HomeController extends Controller
         return view('restaurant');
     }
 
-    public function gallery()
-    {
-        return view('gallery');
-    }
+    ## public function gallery()
+    ## {
+    ##     return view('gallery');
+    ## }
 
     public function contact()
     {
@@ -48,7 +47,6 @@ class HomeController extends Controller
             'message.min'      => 'Votre message doit contenir au moins 10 caractères.',
         ]);
 
-        // TODO: envoyer par email avec Mail::send() plus tard
         return redirect()->route('contact')
                          ->with('success', 'Votre message a été envoyé. Nous vous répondrons dans les 24h.');
     }

@@ -10,20 +10,19 @@
 </head>
 <body>
 
-    <!-- ── NAVBAR ───────────────────────────── -->
+    <!-- NAVBAR -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
 
                 <a href="{{ route('home') }}" class="nav-brand">
-                    <span class="brand-icon">⌘</span>
+                    <span class="brand-icon">ⵥ</span>
                     <div class="brand-text">
                         <span class="brand-name">Kasbah Dades Mgoun</span>
                         <span class="brand-tagline">Kelâat M'Gouna, Maroc</span>
                     </div>
                 </a>
 
-                <!-- mobile hamburger -->
                 <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
                 <label for="nav-toggle" class="nav-hamburger">
                     <span></span><span></span><span></span>
@@ -33,7 +32,6 @@
                     <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Accueil</a></li>
                     <li><a href="{{ route('rooms.index') }}" class="{{ request()->routeIs('rooms.*') ? 'active' : '' }}">Chambres</a></li>
                     <li><a href="{{ route('restaurant') }}" class="{{ request()->routeIs('restaurant') ? 'active' : '' }}">Restaurant</a></li>
-                    <li><a href="{{ route('gallery') }}" class="{{ request()->routeIs('gallery') ? 'active' : '' }}">Galerie</a></li>
                     <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
                     <li><a href="{{ route('reservation.create') }}" class="nav-cta">Réserver</a></li>
                 </ul>
@@ -42,7 +40,6 @@
         </nav>
     </header>
 
-    <!-- ── FLASH MESSAGES ───────────────────── -->
     @if(session('success'))
         <div class="flash flash-success">{{ session('success') }}</div>
     @endif
@@ -50,12 +47,12 @@
         <div class="flash flash-error">{{ session('error') }}</div>
     @endif
 
-    <!-- ── PAGE CONTENT ─────────────────────── -->
+    <!--  PAGE CONTENT  -->
     <main>
         @yield('content')
     </main>
 
-    <!-- ── FOOTER ───────────────────────────── -->
+    <!--  FOOTER -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -69,7 +66,6 @@
                 <ul>
                     <li><a href="{{ route('rooms.index') }}">Nos Chambres</a></li>
                     <li><a href="{{ route('restaurant') }}">Restaurant</a></li>
-                    <li><a href="{{ route('gallery') }}">Galerie Photos</a></li>
                     <li><a href="{{ route('reservation.create') }}">Réservation</a></li>
                 </ul>
             </div>
@@ -87,7 +83,7 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>📍 Kelâat M'Gouna, province de Tinghir, Maroc</p>
-                <p>📞 +212 5XX XXX XXX</p>
+                <p>📞 +212 708 127 300</p>
                 <p>✉️ contact@kasbah-dades.ma</p>
                 <p>🕐 Réception ouverte 24h/24</p>
                 <p style="margin-top: 10px; font-size: 0.8rem; color: rgba(255,255,255,0.5);">

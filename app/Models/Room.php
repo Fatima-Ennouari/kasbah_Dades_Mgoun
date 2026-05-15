@@ -17,13 +17,13 @@ class Room extends Model
         'available'   => 'boolean',
     ];
 
-    // one room can have many reservations
+    ##  one room can have many reservations
     public function reservations()
     {
         return $this->hasMany(Reservation::class);
     }
 
-    // helper to get french type label
+    ## helper to get french type label
     public function getTypeLabelAttribute(): string
     {
         return match($this->type) {
@@ -35,7 +35,7 @@ class Room extends Model
         };
     }
 
-    // helper to get french view label
+    ## helper to get french view label
     public function getViewLabelAttribute(): string
     {
         return match($this->view) {

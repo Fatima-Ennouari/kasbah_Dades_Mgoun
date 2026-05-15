@@ -14,7 +14,7 @@
     <!-- Sidebar -->
     <aside class="admin-sidebar">
         <div class="sidebar-brand">
-            <span class="brand-icon">⌘</span>
+            <span class="brand-icon">ⵥ</span>
             <div>
                 <div class="sidebar-brand-name">Kasbah Admin</div>
                 <div class="sidebar-brand-sub">Panneau de gestion</div>

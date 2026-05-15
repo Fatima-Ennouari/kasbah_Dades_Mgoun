@@ -8,21 +8,20 @@ use App\Models\Reservation;
 
 class ReservationController extends Controller
 {
-    // show the reservation form
+    ## show the reservation form
     public function create(Request $request)
     {
         $rooms = Room::where('available', true)->orderBy('name')->get();
 
-        // preselect room if coming from room detail page
         $selectedRoomId = $request->get('chambre');
 
         return view('reservation.form', compact('rooms', 'selectedRoomId'));
     }
 
-    // save reservation to database
+    ## save reservation to database
     public function store(Request $request)
     {
-        // validate all fields
+        ## validate all fields
         $validated = $request->validate([
             'client_name'  => 'required|min:2|max:100',
             'client_email' => 'nullable|email',
@@ -43,14 +42,14 @@ class ReservationController extends Controller
             'num_people.required'      => 'Le nombre de personnes est obligatoire.',
         ]);
 
-        // check room capacity
+        ## check room capacity
         $room = Room::findOrFail($request->room_id);
         if ($request->num_people > $room->capacity) {
             return back()->withInput()
                          ->withErrors(['num_people' => 'Cette chambre accepte maximum ' . $room->capacity . ' personne(s).' ]);
         }
 
-        // save the reservation
+        ## save the reservation
         $reservation = Reservation::create([
             'client_name'  => $validated['client_name'],
             'client_email' => $validated['client_email'] ?? null,

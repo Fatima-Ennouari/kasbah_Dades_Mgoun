@@ -22,13 +22,13 @@ class Reservation extends Model
         return $this->belongsTo(Room::class);
     }
 
-    // calculate number of nights
+    ##  calculate number of nights
     public function getNightsAttribute(): int
     {
         return $this->check_in->diffInDays($this->check_out);
     }
 
-    // calculate total cost
+    ## calculate total cost
     public function getTotalAttribute(): float
     {
         return $this->nights * ($this->room->price ?? 0);

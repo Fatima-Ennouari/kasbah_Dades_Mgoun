@@ -10,16 +10,15 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // admin user
+        ##  admin user
         DB::table('users')->insert([
-            'name'       => 'Admin Kasbah',
-            'email'      => 'admin@kasbah-dades.ma',
-            'password'   => Hash::make('admin1234'),
+            'name' => 'Admin Kasbah',
+            'email' => 'admin@kasbah-dades.ma',
+            'password' => Hash::make('admin1234'),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
-        // rooms based on real booking.com data for Kasbah Dades Mgoun
         $rooms = [
             [
                 'name'        => 'Chambre Double Vue Rivière',
@@ -108,7 +107,7 @@ class DatabaseSeeder extends Seeder
             ]));
         }
 
-        // a few sample reservations
+        ##  a few sample reservations
         DB::table('reservations')->insert([
             [
                 'client_name'  => 'Hassan Benali',
@@ -124,8 +123,8 @@ class DatabaseSeeder extends Seeder
                 'updated_at'   => now(),
             ],
             [
-                'client_name'  => 'Sophie Leblanc',
-                'client_email' => 'sophie.lb@gmail.com',
+                'client_name'  => 'EL Allai Mohammed',
+                'client_email' => 'EL.Allali@gmail.com',
                 'client_phone' => '+33 6 12 34 56 78',
                 'room_id'      => 4,
                 'check_in'     => '2025-07-20',
@@ -149,6 +148,19 @@ class DatabaseSeeder extends Seeder
                 'created_at'   => now(),
                 'updated_at'   => now(),
             ],
+            [
+                'client_name'  => 'Nawal benjlloune',
+                'client_email' => null,
+                'client_phone' => '+212 802 110 567',
+                'room_id'      => 4,
+                'check_in'     => '2025-06-03',
+                'check_out'    => '2025-06-07',
+                'num_people'   => 3,
+                'notes'        => 'Famille avec 1 enfant',
+                'status'       => 'confirmed',
+                'created_at'   => now(),
+                'updated_at'   => now(),
+            ]
         ]);
     }
 }

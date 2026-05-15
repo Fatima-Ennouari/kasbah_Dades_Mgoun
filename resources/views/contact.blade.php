@@ -34,7 +34,7 @@
                     <span class="contact-icon">📞</span>
                     <div>
                         <strong>Téléphone</strong>
-                        <p>+212 5XX XXX XXX<br><small>Réception 24h/24 — 7j/7</small></p>
+                        <p>+212 708 127 300<br><small>Réception 24h/24 — 7j/7</small></p>
                     </div>
                 </div>
                 <div class="contact-card">

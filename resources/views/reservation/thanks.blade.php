@@ -14,7 +14,7 @@
                 Notre équipe vous contactera dans les <strong>24 heures</strong> pour confirmer votre séjour.
             </p>
             <div class="thanks-contact">
-                <p>📞 <strong>+212 5XX XXX XXX</strong></p>
+                <p>📞 <strong>+212 708 127 300</strong></p>
                 <p>✉️ contact@kasbah-dades.ma</p>
             </div>
             <div class="thanks-actions">

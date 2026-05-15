@@ -55,7 +55,7 @@
             <button type="submit" class="btn btn-primary">Mettre à jour</button>
         </form>
 
-        <hr style="margin: 20px 0; border: none; border-top: 1px solid #eee;">
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ece1e1;">
 
         <a href="{{ route('admin.reservations.delete', $reservation->id) }}"
            class="btn btn-danger btn-block"

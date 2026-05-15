@@ -11,7 +11,7 @@
 <div class="admin-login-page">
     <div class="admin-login-box">
         <div class="login-logo">
-            <span class="brand-icon-large">⌘</span>
+            <span class="brand-icon-large">ⵥ</span>
             <h2>Kasbah Dades Mgoun</h2>
             <p>Espace Administrateur</p>
         </div>

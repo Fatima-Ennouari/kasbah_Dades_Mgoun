@@ -155,7 +155,7 @@
 
                     <div class="booking-contact">
                         <p>Des questions? Contactez-nous:</p>
-                        <a href="tel:+2125XXXXXXX" class="btn btn-outline btn-block">📞 Appeler l'hôtel</a>
+                        <a href="tel:+212708127300" class="btn btn-outline btn-block">📞 Appeler l'hôtel</a>
                     </div>
                 </div>
 

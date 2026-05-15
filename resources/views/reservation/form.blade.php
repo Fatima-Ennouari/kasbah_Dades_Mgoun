@@ -179,8 +179,8 @@
                 <div class="sidebar-info-box sidebar-info-dark">
                     <h4>📞 Réservation directe</h4>
                     <p>Préférez-vous appeler?</p>
-                    <a href="tel:+2125XXXXXXX" class="btn btn-outline-light btn-block">
-                        +212 5XX XXX XXX
+                    <a href="tel:+212708127300" class="btn btn-outline-light btn-block">
+                        +212 708 127 300
                     </a>
                     <small>Ouvert 24h/24 — 7j/7</small>
                 </div>
