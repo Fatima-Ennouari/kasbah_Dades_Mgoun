@@ -4,7 +4,7 @@
 
 @section('content')
 
-{{-- ── HERO SECTION ─────────────────────────── --}}
+{{-- HERO SECTION --}}
 <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -31,7 +31,7 @@
     </div>
 </section>
 
-{{-- ── QUICK INFO BAR ──────────────────────── --}}
+{{-- QUICK INFO BAR --}}
 <section class="info-bar">
     <div class="container">
         <div class="info-bar-grid">
@@ -67,7 +67,7 @@
     </div>
 </section>
 
-{{-- ── ABOUT SECTION ───────────────────────── --}}
+{{-- ABOUT SECTION --}}
 <section class="section section-about">
     <div class="container">
         <div class="about-grid">
@@ -129,7 +129,7 @@
     </div>
 </section>
 
-{{-- ── FEATURED ROOMS ──────────────────────── --}}
+{{-- FEATURED ROOMS --}}
 <section class="section section-gray">
     <div class="container">
         <div class="section-header">
@@ -180,7 +180,7 @@
     </div>
 </section>
 
-{{-- ── AMENITIES GRID ──────────────────────── --}}
+{{-- AMENITIES GRID --}}
 <section class="section section-amenities">
     <div class="container">
         <div class="section-header">
@@ -222,7 +222,7 @@
     </div>
 </section>
 
-{{-- ── CTA BAND ─────────────────────────────── --}}
+{{-- CTA BAND --}}
 <section class="cta-band">
     <div class="container">
         <div class="cta-band-content">
@@ -230,7 +230,7 @@
             <p>Réservez directement et bénéficiez du meilleur tarif. Paiement à l'arrivée.</p>
             <div class="cta-band-actions">
                 <a href="{{ route('reservation.create') }}" class="btn btn-primary btn-lg">Réserver maintenant</a>
-                <a href="tel:+2125XXXXXXX" class="btn btn-outline-light">📞 Nous appeler</a>
+                <a href="tel:+212708127300" class="btn btn-outline-light">📞 Nous appeler</a>
             </div>
         </div>
     </div>
